@@ -15,17 +15,6 @@ Each quality requirement specifies measurable and testable criteria, including a
 
 **FR-USU-1: Management of Unions** includes:  
 **(a) approval of USU membership applications** submitted by university-specific student unions (FR-UO-5 explains the details for the data required for an application to the USU membership).
-   - name of event
-   - theme of event
-   - connection to other events
-   - name of organisers and there roles
-   - date and time of event
-   - venue of event
-   - optional plan of the evnet
-   - participation constraints: if it's required to register and/or buy a ticket in advance or on site
-   - scope: if it is nationwide, regional or specific university students
-   - promotion scope: where and who it will be promoted to
-   - promotion materials: photos, video streams, text descriptions, posters, URL
 
 approval of union membership means:
 
