@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hEmJ4NOiEfCetawHy9NYxw" name="System_Architecture">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_hG4o4NOiEfCetawHy9NYxw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ntDroNOiEfCetawHy9NYxw" name="USU Operation System">
+    <packagedElement xmi:type="uml:Component" xmi:id="_kNPgYNOjEfCQ0KD_JbpdBQ" name="Notification Dispatcher"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_n3RiINOjEfCQ0KD_JbpdBQ" name="Membership Update Service"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_tFONsNOjEfCQ0KD_JbpdBQ" name="FederationEventService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_vzsmINOjEfCQ0KD_JbpdBQ" name="AnalyticsAndRankingService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_43PDMNOjEfCQ0KD_JbpdBQ" name="UnionMembershipService">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_9-p2sNOoEfCQ0KD_JbpdBQ" name="NotificationGatewayAPI" client="_43PDMNOjEfCQ0KD_JbpdBQ" supplier="_zVvXQNOoEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_971lgNOjEfCQ0KD_JbpdBQ" name="TerminationService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_AJ5_kNOkEfCQ0KD_JbpdBQ" name="EndorsmentService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_WDEEMNOkEfCQ0KD_JbpdBQ" name="AIRecommendationEngine"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1WCp0NOiEfCetawHy9NYxw" name="Student Union Management System">
+    <packagedElement xmi:type="uml:Component" xmi:id="_jGoBINOkEfCQ0KD_JbpdBQ" name="UnionMembershipAdmin"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_osoAUNOkEfCQ0KD_JbpdBQ" name="FederationEventManagement"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_y_n6INOkEfCQ0KD_JbpdBQ" name="UnionSocietyApprovalService">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_00dNcNOnEfCQ0KD_JbpdBQ" name="UnionApprovalAPI" client="_y_n6INOkEfCQ0KD_JbpdBQ" supplier="_WLrYMNOlEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_4TKQUNOkEfCQ0KD_JbpdBQ" name="UnionSubsystemGateway">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_kSbJENOoEfCQ0KD_JbpdBQ" name="UnionStudentAppSyncAPI" client="_4TKQUNOkEfCQ0KD_JbpdBQ" supplier="_UcNwQNOmEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_bgcykNOnEfCQ0KD_JbpdBQ" name="UnionDataSyncAPI" client="_1WCp0NOiEfCetawHy9NYxw" supplier="_ntDroNOiEfCetawHy9NYxw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_4MVIMNOnEfCQ0KD_JbpdBQ" name="StudentDataSyncAPI" client="_1WCp0NOiEfCetawHy9NYxw" supplier="_SCyQMNOlEfCQ0KD_JbpdBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_42LvwNOiEfCetawHy9NYxw" name="Society Leader App">
+    <packagedElement xmi:type="uml:Component" xmi:id="_SCyQMNOlEfCQ0KD_JbpdBQ" name="SocietyManagementService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_WLrYMNOlEfCQ0KD_JbpdBQ" name="EventManagementService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_uWDRgNOlEfCQ0KD_JbpdBQ" name="MembershipManagementService">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_MY0PoNOoEfCQ0KD_JbpdBQ" name="StudentAppEventsAPI" client="_uWDRgNOlEfCQ0KD_JbpdBQ" supplier="_SXth4NOmEfCQ0KD_JbpdBQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_VHP_YNOoEfCQ0KD_JbpdBQ" name="StudentAppSyncAPI" client="_uWDRgNOlEfCQ0KD_JbpdBQ" supplier="_SXth4NOmEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_5jokQNOlEfCQ0KD_JbpdBQ" name="NotificationOrchestratorService">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_HB9qQNOpEfCQ0KD_JbpdBQ" client="_5jokQNOlEfCQ0KD_JbpdBQ" supplier="_1-gwUNOoEfCQ0KD_JbpdBQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_KnVOcNOpEfCQ0KD_JbpdBQ" name="IdentityAPI" client="_5jokQNOlEfCQ0KD_JbpdBQ" supplier="_zVvXQNOoEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_CSo7wNOmEfCQ0KD_JbpdBQ" name="AnnouncementFeedService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_HfVqINOmEfCQ0KD_JbpdBQ" name="Notifications">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_IrdNENOoEfCQ0KD_JbpdBQ" name="StudentAppMembershipAPI" client="_HfVqINOmEfCQ0KD_JbpdBQ" supplier="_2ckQMNOmEfCQ0KD_JbpdBQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_aI-XYNOpEfCQ0KD_JbpdBQ" name="MediaStorageAPI" client="_HfVqINOmEfCQ0KD_JbpdBQ" supplier="_5pNgcNOoEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_K7VXQNOjEfCQ0KD_JbpdBQ" name="USU Student App">
+    <packagedElement xmi:type="uml:Component" xmi:id="_SXth4NOmEfCQ0KD_JbpdBQ" name="AuthValidation"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_hzc3INOmEfCQ0KD_JbpdBQ" name="AnnouncemendFeedService"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_2ckQMNOmEfCQ0KD_JbpdBQ" name="StudentDataSync">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_xr8ScNOpEfCQ0KD_JbpdBQ" name="PaymentProviderAPI" client="_2ckQMNOmEfCQ0KD_JbpdBQ" supplier="_oWvdoNOpEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_GKxOcNOnEfCQ0KD_JbpdBQ" name="StudentMembership">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_37AcwNOpEfCQ0KD_JbpdBQ" name="MapProviderAPI" client="_GKxOcNOnEfCQ0KD_JbpdBQ" supplier="_rm8qINOpEfCQ0KD_JbpdBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_NZthYNOnEfCQ0KD_JbpdBQ" name="StudentPaymentGateway"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_UcNwQNOmEfCQ0KD_JbpdBQ" name="StudentEventParticipation"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_zVvXQNOoEfCQ0KD_JbpdBQ" name="AuthService"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1-gwUNOoEfCQ0KD_JbpdBQ" name="NotificationGateway"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_5pNgcNOoEfCQ0KD_JbpdBQ" name="MediaStorageService"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_oWvdoNOpEfCQ0KD_JbpdBQ" name="ExternalPaymentHandler"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_rm8qINOpEfCQ0KD_JbpdBQ" name="ExternalMapService"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_D9unwNOqEfCQ0KD_JbpdBQ" name="" client="_37AcwNOpEfCQ0KD_JbpdBQ" supplier="_NZthYNOnEfCQ0KD_JbpdBQ"/>
+</uml:Model>
